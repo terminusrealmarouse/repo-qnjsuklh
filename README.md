@@ -52,6 +52,8 @@ app/
 4. 点击“启动消息监听”观察消息回调日志。
 5. 填写接收方 `wxid` 或群 id，点击“发送文本任务”观察 `sendTask` 返回值和任务结束回调。
 
+APK 的 `minSdk` 为 16，并启用 v1/v2 debug 签名和 legacy native library packaging，方便旧版 Android/Xposed 测试设备安装。
+
 如果设备环境中缺少对应的 Xposed/微信二次开发模块，SDK native 调用可能返回错误或抛出加载/运行异常；示例会把异常显示在页面日志里，方便确认集成是否正确。
 
 ## SDK 来源
